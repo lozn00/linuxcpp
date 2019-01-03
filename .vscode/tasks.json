@@ -1,0 +1,65 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    //ctrl shift p choose task
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile",
+            "type": "shell",
+            "command": "echo compile exeover&g++ -g  ${file} -o ${fileDirname}/${fileBasenameNoExtension}",
+            // "command": "g++ ${file} -o ${fileDirname}/${fileBasenameNoExtension}&echo compile exeover&${fileDirname}/${fileBasenameNoExtension}",
+            "cwd": "${workspaceFolder}",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "compileRun",
+            "type": "shell",
+            // "command": "echo compile exeover&g++ -g  ${file} -o ${fileDirname}/${fileBasenameNoExtension}",
+            "command": "g++ -g -g -Wall -std=c++11 ${file} -o ${fileDirname}/${fileBasenameNoExtension} -lpthread&&echo [-----compileSucc----]&&${fileDirname}/${fileBasenameNoExtension}&&echo [----executeSucc----]",
+            "args": [ //传递给命令的参数
+                {
+                //    "value": "",
+                     "quoting": "escape" //指定对内容的escape
+                }
+            ],
+            "problemMatcher": [
+            ],
+
+            
+            "options": {
+                "cwd": "${fileDirname}",
+                "env": { //wsl的环境变量支持有问题，设置不生效
+                    "MY_NAME": "aaaaaaa"
+                },
+                "shell": { //shell执行的一些配置
+                    "executable": "bash",
+                    "args": [
+                        "-c"
+                    ]
+                },
+            },
+
+            "presentation": {
+                "echo": false,//如果 为false,怎么执行命令是不会提示的,但是 程序里面的控制信息是会执行的.
+                "reveal": "always",
+                // "reveal": "never",//揭露 总是 显示信息不然搞毛.
+                "focus": false,
+                "panel": "shared",//面板就是每次启动的时候是否新开 dedicated专用 ,shared保留之前
+                "clear": true,//每次变异 是否清屏.
+                "showReuseMessage": false// 不是,true就提示enter,否则 还是需要按enter 就是提示那个英文而已但是并不会自动关闭
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

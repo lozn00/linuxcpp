@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "fstream": "cpp",
+        "iosfwd": "cpp",
+        "*.tcc": "cpp",
+        "array": "cpp",
+        "stdlib.h": "c",
+        "debugger.h": "c",
+        "stdexcept": "cpp"
+    }
+}

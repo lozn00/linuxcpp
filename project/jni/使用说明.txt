@@ -1,0 +1,8 @@
+使用前务必把nm32和nm64复制到/system/xbin并chmod 777
+使用前务必把Test.so和jni复制到/system并chmod777
+使用方法:
+cd /system
+./jni bin.mt.plus(以MT管理器为例)
+结果会保存到/sdcard/Fdb下，打印映射结果
+本库集内存dump、寄存器操作、远程操作malloc、free、So注入于一身
+后续会增加断点之类的功能
