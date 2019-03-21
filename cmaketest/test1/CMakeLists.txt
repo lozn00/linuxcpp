@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.9)
+ADD_SUBDIRECTORY(mod1)
+INCLUDE_DIRECTORIES(mod1)
+ADD_EXECUTABLE(test1 src/main.c)
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)#二进制输出的目录
+TARGET_LINK_LIBRARIES(test1 myMath)
+
+
+

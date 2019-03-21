@@ -1,0 +1,6 @@
+/home/richard/test1/build/CMakeFiles/rebuild_cache.dir
+/home/richard/test1/build/CMakeFiles/edit_cache.dir
+/home/richard/test1/build/CMakeFiles/test1.dir
+/home/richard/test1/build/mod1/CMakeFiles/edit_cache.dir
+/home/richard/test1/build/mod1/CMakeFiles/rebuild_cache.dir
+/home/richard/test1/build/mod1/CMakeFiles/myMath.dir

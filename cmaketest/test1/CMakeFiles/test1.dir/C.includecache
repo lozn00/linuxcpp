@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luo/Desktop/Code/StudyCpp/cmaketest/test1/src/main.c
+stdio.h
+-
+add.c
+/home/luo/Desktop/Code/StudyCpp/cmaketest/test1/src/add.c
+
+mod1/add.c
+

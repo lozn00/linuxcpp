@@ -1,0 +1,6 @@
+/home/luo/Desktop/Code/StudyCpp/cmaketest/test1/CMakeFiles/rebuild_cache.dir
+/home/luo/Desktop/Code/StudyCpp/cmaketest/test1/CMakeFiles/edit_cache.dir
+/home/luo/Desktop/Code/StudyCpp/cmaketest/test1/CMakeFiles/test1.dir
+/home/luo/Desktop/Code/StudyCpp/cmaketest/test1/mod1/CMakeFiles/rebuild_cache.dir
+/home/luo/Desktop/Code/StudyCpp/cmaketest/test1/mod1/CMakeFiles/edit_cache.dir
+/home/luo/Desktop/Code/StudyCpp/cmaketest/test1/mod1/CMakeFiles/myMath.dir

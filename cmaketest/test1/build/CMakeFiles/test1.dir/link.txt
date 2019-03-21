@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/test1.dir/src/main.o  -o ../bin/test1 -rdynamic ../lib/libmyMath.so -Wl,-rpath,/home/richard/test1/lib 

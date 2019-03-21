@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/test1.dir/src/main.c.o  -o bin/test1 -Wl,-rpath,/home/luo/Desktop/Code/StudyCpp/cmaketest/test1/lib lib/libmyMath.so 
